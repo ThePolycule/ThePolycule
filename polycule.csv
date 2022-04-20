@@ -1,0 +1,60 @@
+# label: %name%
+#
+# style: label;image=%image%;whiteSpace=wrap;html=1;rounded=1; fillColor=#dae8fc;strokeColor=#6c8ebf;
+# parentstyle: swimlane;whiteSpace=wrap;html=1;childLayout=stackLayout;horizontal=1;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;
+#
+# namespace: csvimport-
+#
+# connect: {"from": "manager", "to": "name", "invert": true, "label": "manages", "style": "curved=1;endArrow=blockThin;endFill=1;fontSize=11;"}
+# connect: {"from": "partners", "to": "id", "style": "curved=1;fontSize=11;"}
+#
+## Node width and height, and padding for autosize
+# width: auto
+# height: auto
+# padding: -12
+#
+# ignore: id,image,fill,stroke,refs,manager
+#
+## Column to be renamed to link attribute (used as link).
+# link: url
+#
+## Spacing between nodes, heirarchical levels and parallel connections.
+# nodespacing: 40
+# levelspacing: 100
+# edgespacing: 40
+#
+# layout: auto
+#
+## ---- CSV below this line. First line are column names. ----
+name,id,partners,image
+Ray,ray,"sh1",
+Lux,lux,"sh1",
+Shae,sh1,"ray,lux,sh2,cat,niz,lys,raq",
+Shae,sh2,"sh1",
+Catarina,cat,"sh1",
+Nizzy,niz,"sh1,lys",https://cdn.discordapp.com/avatars/166974615480958977/8a36c1f8ccd90d060ca49b312c07d512.webp?size=128
+Lyss,lys,"sh1,niz,mae",https://cdn.discordapp.com/avatars/684608982106636377/2ccf96d2ba641cfa1544ef5a4ca4e742.webp?size=128
+Maelyn,mae,"lys,ali,nad",https://pbs.twimg.com/profile_images/1512094881971326987/JynYSTPF_400x400.jpg
+Alice,ali,"mae,lam,con,nad,ril",https://cdn.discordapp.com/avatars/538831745152450564/a_7d0367f88510303185f0a926a03ff139.webp?size=128
+Lamia,lam,"ali,nad,cap",https://pbs.twimg.com/profile_images/1462147501172183044/C5TvxYxR_400x400.jpg
+Capo,cap,"ali,lam",https://pbs.twimg.com/profile_images/1390504606237609984/HjmP9FQF_400x400.png
+Nadia,nad,"mae,raq,chl,lyd,con,lam,ali",https://pbs.twimg.com/profile_images/1494781963525308424/lf4gDlty_400x400.jpg
+Constance,con,"nad,ali,raq",
+RAQ,raq,"nad,sh1,zvvx",https://cdn.discordapp.com/avatars/556507182678671391/fa9bf0459a4d8c8f4fa9283e60f21198.webp?size=128
+ZVVX,zvvx,"raq",https://cdn.discordapp.com/avatars/451519210603020309/4374777f1eb340a5aaf2a1cb7bad010d.webp?size=128
+Chloe,chl,"nad,lyd,jam",https://cdn.discordapp.com/avatars/225807230174363648/1127f9d3e5e1e41e8cec1dbcac1da2fe.webp?size=128
+Lydia,lyd,"chl,nad,jam",
+Val,val,"vts,abb,viv,niz",
+VTStormy,vts,"val,abb,eve",https://pbs.twimg.com/profile_images/1404793739944542210/uwj7w-ev_400x400.jpg
+Abby,abb,"val,vts,liz,viv",
+Evelyn,eve,"vts",
+Lizzy,liz,"abb",
+Vivi,viv,"val,abb,rav",
+Raven,rav,viv,
+Riley,ril,"ali,syl,rya,kri,art,omn",https://pbs.twimg.com/profile_images/1190356938313404416/jJksnRnc_400x400.jpg
+Syl,syl,"ril",
+Ryan,rya,"ril",
+Krispy,kri,"ril",
+Art,art,"ril",
+Omni,omn,"ril",
+Jamie,jam,"lyd,chl",
