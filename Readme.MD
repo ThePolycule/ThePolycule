@@ -1,7 +1,12 @@
 # ThePolycule
 
-Create and view in draw.io
-https://import.diagrams.net/?desc=PU7RDoIwDPyavRIDRJ4Hy5AH1Miiwbc5hxBhI6PT+PcWojSXa6+XNkeSlIShdz0yiShyCzBOy8gRTr6DRwetv/lJO2UNaAOBsgN6sv8orTo85aLVR4vS9xrVIDuDbfxtAjW9SMTBPrUhEct3FRUbulRaxYdSFHV22rO85Ok1LraXKq8FZWc6pyFhhtxYN0hYI87//tZdglyNGQn7Ag==&title=The%20Polycule
+## CSV File Purpose
 
+### Guide
+[https://drawio-app.com/automatically-create-draw-io-diagrams-from-csv-files/](https://drawio-app.com/automatically-create-draw-io-diagrams-from-csv-files/)
 
-CSV File for https://drawio-app.com/automatically-create-draw-io-diagrams-from-csv-files/
+### UI 
+[https://jgraph.github.io/drawio-tools/tools/csv.html](https://jgraph.github.io/drawio-tools/tools/csv.html)
+
+## Direct Link
+[https://import.diagrams.net/?desc=UzV3UjUyKi3KAZKqxo5AMqOkpKAYzHQDoqLEcr30zJKM0qTS4tSi5Py8ktS8Er3k/FygXEhGakB+TmVyaU4qBi83MTMPSBVARfSSi8tANhg5A8m0/KLcxBK4hchSKYkliXAJEDJ3AQA=&title=The%20Polycule](https://import.diagrams.net/?desc=UzV3UjUyKi3KAZKqxo5AMqOkpKAYzHQDoqLEcr30zJKM0qTS4tSi5Py8ktS8Er3k/FygXEhGakB+TmVyaU4qBi83MTMPSBVARfSSi8tANhg5A8m0/KLcxBK4hchSKYkliXAJEDJ3AQA=&title=The%20Polycule)
