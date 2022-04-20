@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import the.polycule.GraphService;
+import the.polycule.service.GraphService;
 
 public class GraphServiceTest {
     GraphService underTest = new GraphService();

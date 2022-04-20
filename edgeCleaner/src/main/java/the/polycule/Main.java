@@ -1,6 +1,7 @@
 package the.polycule;
 
 import the.polycule.model.Graph;
+import the.polycule.service.PolyculeCSVUtil;
 
 import java.io.File;
 import java.io.FileReader;
@@ -10,7 +11,7 @@ import java.io.Reader;
 public class Main {
     public static void main(String... args) throws IOException {
         String finPath;
-        if (args != null || args.length == 0) {
+        if (args == null || args.length == 0) {
             finPath = "polycule.csv";
         } else {
             finPath = args[0];

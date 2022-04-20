@@ -1,5 +1,5 @@
 import org.junit.jupiter.api.Test;
-import the.polycule.PolyculeCSVUtil;
+import the.polycule.service.PolyculeCSVUtil;
 import the.polycule.model.Edge;
 import the.polycule.model.Graph;
 import the.polycule.model.Node;

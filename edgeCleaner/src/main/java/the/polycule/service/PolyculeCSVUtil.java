@@ -1,4 +1,4 @@
-package the.polycule;
+package the.polycule.service;
 
 
 import org.apache.commons.csv.CSVFormat;
@@ -41,9 +41,7 @@ public class PolyculeCSVUtil {
             String csvPartners = record.get("partners");
             if (StringUtils.isNotEmpty(csvPartners)) {
                 String[] splits = csvPartners.split(",");
-                int i = 0;
                 for (String partner : splits) {
-                    i++;
                     graph.getEdges().add(
                             new Edge(id, partner)
                     );
