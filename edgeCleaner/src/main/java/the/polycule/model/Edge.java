@@ -32,4 +32,12 @@ public class Edge {
                 ", toId='" + toId + '\'' +
                 '}';
     }
+
+    public String getFromId() {
+        return fromId;
+    }
+
+    public String getToId() {
+        return toId;
+    }
 }

@@ -1,7 +1,7 @@
 package the.polycule;
 
-import the.polycule.model.Graph;
-import the.polycule.service.PolyculeCSVUtil;
+import the.polycule.model.RawGraph;
+import the.polycule.service.transform.PolyculeCSVUtil;
 
 import java.io.File;
 import java.io.FileReader;
@@ -28,7 +28,7 @@ public class Main {
         Reader in = new FileReader(fin);
 
         PolyculeCSVUtil csvUtil = new PolyculeCSVUtil();
-        Graph graph = csvUtil.loadCSV(in);
+        RawGraph graph = csvUtil.loadCSV(in);
 
     }
 }

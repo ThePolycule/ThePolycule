@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Test;
-import the.polycule.service.PolyculeCSVUtil;
+import the.polycule.service.transform.PolyculeCSVUtil;
 import the.polycule.model.Edge;
-import the.polycule.model.Graph;
+import the.polycule.model.RawGraph;
 import the.polycule.model.Node;
 
 import java.io.IOException;
@@ -19,11 +19,11 @@ public class CSVTest {
         String ID = "aId";
         String NAME = "aName";
         String csvSample = "name,id,partners,image\n" + NAME + "," + ID + ",," + IMG;
-        Graph expected = new Graph();
+        RawGraph expected = new RawGraph();
         expected.setEdges(Collections.emptyList());
         expected.setNodes(Collections.singletonList(new Node(ID, NAME, IMG)));
 
-        Graph result = underTest.loadCSV(csvSample);
+        RawGraph result = underTest.loadCSV(csvSample);
 
         assertThat(result).isNotNull();
         assertThat(result.getEdges()).isEqualTo(expected.getEdges());
@@ -46,11 +46,11 @@ public class CSVTest {
 
         System.out.println(csvSample);
 
-        Graph expected = new Graph();
+        RawGraph expected = new RawGraph();
         expected.setEdges(Arrays.asList(new Edge(aId, bId), new Edge(aId, cId), new Edge(bId, aId), new Edge(cId, aId)));
         expected.setNodes(Arrays.asList(new Node(aId, aName, null), new Node(bId, bName, null), new Node(cId, cName, URL)));
 
-        Graph result = underTest.loadCSV(csvSample);
+        RawGraph result = underTest.loadCSV(csvSample);
 
         assertThat(result).isNotNull();
         assertThat(result.getEdges()).isEqualTo(expected.getEdges());

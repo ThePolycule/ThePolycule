@@ -1,10 +1,16 @@
 package the.polycule.model;
 
+import java.util.LinkedList;
 import java.util.List;
 
-public class Graph {
+public class RawGraph {
     List<Node> nodes;
     List<Edge> edges;
+
+    public RawGraph() {
+        this.nodes = new LinkedList<>();
+        this.edges = new LinkedList<>();
+    }
 
     public List<Node> getNodes() {
         return nodes;

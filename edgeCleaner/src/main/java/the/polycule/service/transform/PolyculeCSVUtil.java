@@ -1,31 +1,28 @@
-package the.polycule.service;
+package the.polycule.service.transform;
 
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.lang3.StringUtils;
 import the.polycule.model.Edge;
-import the.polycule.model.Graph;
 import the.polycule.model.Node;
+import the.polycule.model.RawGraph;
 
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
-import java.util.LinkedList;
 
 public class PolyculeCSVUtil {
-    public Graph loadCSV(String csvSample) throws IOException {
+    public RawGraph loadCSV(String csvSample) throws IOException {
         return loadCSV(new StringReader(csvSample));
     }
 
-    public Graph loadCSV(Reader in) throws IOException {
-        Graph graph = new Graph();
-        graph.setNodes(new LinkedList<>());
-        graph.setEdges(new LinkedList<>());
+    public RawGraph loadCSV(Reader in) throws IOException {
+        RawGraph graph = new RawGraph();
         Iterable<CSVRecord> records = CSVFormat.EXCEL.withCommentMarker('#').withHeader("name", "id", "partners", "image").parse(in);
         boolean first = false;
         for (CSVRecord record : records) {
-            if(!first){
+            if (!first) {
                 first = true;
                 continue;
             }
