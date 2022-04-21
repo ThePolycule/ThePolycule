@@ -1,6 +1,11 @@
 package the.polycule;
 
+import org.jgrapht.Graph;
+import org.jgrapht.graph.DefaultEdge;
+import the.polycule.model.Node;
 import the.polycule.model.RawGraph;
+import the.polycule.service.GraphService;
+import the.polycule.service.NodeService;
 import the.polycule.service.transform.PolyculeCSVUtil;
 
 import java.io.File;
@@ -30,5 +35,8 @@ public class Main {
         PolyculeCSVUtil csvUtil = new PolyculeCSVUtil();
         RawGraph graph = csvUtil.loadCSV(in);
 
+        NodeService nodeService = new NodeService();
+        GraphService graphService = new GraphService(nodeService);
+        Graph<Node, DefaultEdge> jGraph = graphService.transformJGraph(graph);
     }
 }
