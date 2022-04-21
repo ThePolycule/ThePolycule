@@ -28,12 +28,12 @@
 ## ---- CSV below this line. First line are column names. ----
 name,id,partners,image
 Ray,ray,"sh1,em,dwn",
-Lux,lux,"sh1",
-Shae,sh1,"ray,lux,sh2,cat,niz,lys,raq",
+Lux,lux,"sh1,lyss,wil,max,eli,rai,luc",
+Shae,sh1,"ray,lux,sh2,cat,niz,lys,raq,wil",
 Shae,sh2,"sh1",
 Catarina,cat,"sh1",
 Nizzy,niz,"sh1,lys,wil,viv,val,vio",
-Lyss,lys,"sh1,niz,mae,wil",
+Lyss,lys,"sh1,niz,mae,wil,lux",
 Maelyn,mae,"lys,ali,nad",https://pbs.twimg.com/profile_images/1512094881971326987/JynYSTPF_400x400.jpg
 Alice,ali,"mae,lam,con,nad,ril",
 Lamia,lam,"ali,nad,cap",https://pbs.twimg.com/profile_images/1462147501172183044/C5TvxYxR_400x400.jpg
@@ -65,5 +65,9 @@ Bunny,bun,"dwn",
 Erica,eri,"dwn,mar",
 Maria,mar,"dwn,eri",
 Jesse,jes,"vts",
-Willow,wil,"niz,lys",
+Willow,wil,"niz,lys,sh1,lux",
 Violet,vio,"niz",
+Maxine,max,"lux",
+Elif,eli,"lux",
+Rain,rai,"lux",
+Lucila,luc,"lux",
